@@ -1,14 +1,3 @@
-/* 
-New CSS features:
-align-content for block  
-@property
-
-@starting-style
-light-dark func
-:user-valid vs :valid / :invalid
-
-interpolate-size: allow-keywords
-*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
@@ -248,7 +237,7 @@ footer{
     pointer-events: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1123px) {
     body, body div, body div div, #edit div{
         text-align: center;
     }
@@ -281,8 +270,14 @@ footer{
     }
 
     header{
-        margin-left:0;
-        margin-right:0;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin:0 20%;
+        height:75px;
+        position: sticky;
+        margin-bottom:150px;
     }
 
     #header__buttons button{
@@ -313,6 +308,12 @@ footer{
 
 }
 @media screen and (max-width:700px){
+    *{
+        cursor:default
+    }
+    .cursor-dot, .cursor-outline{
+        display:none
+    }
     .image{
         width:400px;
         height:auto;
